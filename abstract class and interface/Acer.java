@@ -5,7 +5,4 @@ public class Acer extends Laptop{
     void colors(){
        System.out.println("Blue, Pink");
     }
-    void work(){
-        System.out.println("good to work");
-    }
 }
