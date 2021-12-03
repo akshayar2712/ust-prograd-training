@@ -1,0 +1,29 @@
+? Online job portal
+        Applicants - find jobs
+        Employers - find candidate for job
+
+
+
+Applicants:                             
+-Registration
+-Login
+-Make profile
+-Job search
+-Apply jobs
+-Likes job
+-Update profile
+-Send/receive messages
+
+
+Employers:
+-Registration
+-Login
+-Search profile
+-Post job
+-Manage job
+-Send/receive messages
+
+Admin:
+-Login
+-Search
+-Manage account 
