@@ -1,0 +1,24 @@
+? Online shopping portal
+          Customer -> make purcahse online
+                      view items
+                      register in portal
+                      make purchase
+
+
+Customer:
+  Register
+  Login
+  Search items
+  Add items to cart
+  Place order
+  Make payment
+  Cancel order
+  View order status
+  Report error
+ 
+
+Admin:
+  Login
+  Update items
+  Change order status
+  Help
