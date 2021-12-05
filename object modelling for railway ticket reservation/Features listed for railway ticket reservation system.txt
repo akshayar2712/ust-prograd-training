@@ -1,0 +1,27 @@
+? Railway ticket reservation system
+          Customer -> enquire ticket availability
+                      book, cancel, print tickets
+          Clerk -> print tickets
+                   process cancellation
+                   refund payment
+
+Customer
+       Register
+       Login
+       Search train
+       Search tickets
+       Book ticket
+       Make payment
+       Cancel ticket
+       Print ticket
+
+Clerk
+       Verify payment
+       Print ticket
+       Process cancellation
+       Refund money
+
+ Admin
+       Update train details
+       Manages booking
+       
