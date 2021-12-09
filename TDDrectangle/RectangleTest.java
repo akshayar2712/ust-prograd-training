@@ -10,18 +10,18 @@ public class RectangleTest {
         @Test
         public void checkAreaIsSeventyTwoWhenLengthIsTwelveAndBreadthIsSix() {
             Rectangle area = new Rectangle(10, 6);
-            double answer = area.area();
-            double expected = 60;
-            Assertions.assertEquals(answer, expected);
+            double actualArea = area.area();
+            double expectedArea = 60;
+            Assertions.assertEquals(actualArea, expectedArea);
         }
 
 
         @Test
         public void checkAreaIsTwentyNinePointSixWhenLengthIsSevenPointFourAndBreadthIsFour() {
             Rectangle area = new Rectangle(7.4, 4);
-            double answer = area.area();
-            double expected = 29.6;
-            Assertions.assertEquals(answer, expected);
+            double actualArea = area.area();
+            double expectedArea = 29.6;
+            Assertions.assertEquals(actualArea, expectedArea);
         }
 
         @Test
@@ -38,17 +38,17 @@ public class RectangleTest {
     @Test
         public void checkPerimeterIsEighteenIfLengthFourAndBreadthFive(){
             Rectangle perimeter = new Rectangle(4,5);
-            double answer = perimeter.perimeter();
-            double expected = 18;
-            Assertions.assertEquals(answer, expected);
+            double actualPerimeter = perimeter.perimeter();
+            double expectedPerimeter = 18;
+            Assertions.assertEquals(actualPerimeter, expectedPerimeter);
     }
     @Test
     public void checkPerimeterForDecimalMeasurements(){
         Rectangle perimeter = new Rectangle(4.5,5.6);
         DecimalFormat df = new DecimalFormat("#.#");
-        double answer = perimeter.perimeter();
-        double expected = 20.2;
-            Assertions.assertEquals(df.format(answer), df.format(expected));
+        double actualPerimeter = perimeter.perimeter();
+        double expectedPerimeter = 20.2;
+            Assertions.assertEquals(df.format(actualPerimeter), df.format(expectedPerimeter));
     }
     @Test
     public void throwExceptionWhenMeasurementsBecomeNegativeOrZero(){
