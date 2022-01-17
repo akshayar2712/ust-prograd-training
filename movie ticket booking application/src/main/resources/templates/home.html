@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        background-color: grey;
+        height: 50px;
+       }
+
+    nav ul li{
+        list-style-type: none;
+        width: 150px;
+        float: left;
+        border-right: 1px solid #CCC;
+        text-align: center;
+        }
+    li a{
+        text-decoration: none;
+        color: white;
+        line-height: 50px;
+        display: block;
+        }
+    li a:hover{
+        background-color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div >
+
+    <marquee><h2>Welcome to movie world</h2></marquee>
+
+</div>
+</body>
+</html>

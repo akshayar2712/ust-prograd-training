@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Details</title>
+    <style>
+               table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+ background-color: darkgrey;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+    </style>
+</head>
+
+<body>
+<center>
+    <h2>Movie List</h2><br/>
+</center>
+
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+        <tr>
+            <th scope="col">Movie Name</th>
+            <th scope="col">Release Date</th>
+            <th scope="col">Book</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="movie: ${movies}">
+            <td th:text="${movie.movieName}"></td>
+            <td th:text="${movie.releaseDate}"></td>
+
+            <td>
+                <a class="btn btn-success" th:href="@{/movie/{id} (id=${movie.movieId})}">Book Tickets</a>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>
