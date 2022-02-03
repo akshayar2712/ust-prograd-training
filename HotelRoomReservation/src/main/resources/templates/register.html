@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<center>
+    <h1>Register</h1>
+</center>
+<form action="/login" method="post">
+    <center>
+        <div class="container" style="border:2px solid black;padding:50px;width:350px;background-color:lightgrey">
+            <label style="font-size:125%">Username:</label>&nbsp;
+            <input type="text" placeholder="Enter Username" name="userName" required><br/><br/>
+            <label style="font-size:125%">Password:</label>&nbsp;
+            <input type="password" placeholder="Enter Password" name="password" required><br/><br/>
+            <label style="font-size:125%">ReEnter Password:</label>&nbsp;
+            <input type="password" placeholder="ReEnter Password" name="password" required><br/><br/>
+            <label style="font-size:125%">MobileNumber</label>&nbsp;
+            <input type="number" placeholder="Enter Mobile Number" name="mobileNumber"><br/><br/>
+            <button type="submit">Register</button>
+            <button type="button" class="cancelButton" onclick="/">Cancel</button><br/><br/>
+            Have an Account?<a href="/login">Login Here</a>
+        </div>
+    </center>
+</form>
+</body>
+</html>
